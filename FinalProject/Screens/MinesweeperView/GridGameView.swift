@@ -37,7 +37,7 @@ struct GridGameView: View {
                                 .animation(.easeInOut(duration: 1), value: vM.isAlertActive)
                         }
                         
-                        Image(vM.cells[i]?.flagImage ?? "")
+                        Image(vM.cells[i]?.numberOrFlag ?? "")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .opacity(vM.showBombs ? 0 : 1)
