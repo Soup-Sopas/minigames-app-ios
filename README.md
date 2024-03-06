@@ -2,7 +2,7 @@
 #### Video Demo
 <https://youtu.be/YKkKlVeTldU>
 #### Description
-This app for IOS is only available for iPhones and it was created as a project for the CS50 Course. The app includes a Tic Tac Toe and Minesweeper
+This app for IOS is only available for iPhones and it was created as a project for the CS50 Course. The app includes a Tic Tac Toe and Minesweeper.
 
 #
 ### Title Screen 
@@ -44,6 +44,7 @@ The Minesweeper game consists of three files, the first file `MinesweeperView`, 
 - The `Int` extension provides a method `getUniqueRandomNumbers` to generate unique random numbers within a range, excluding specified exceptions.
 
 ### Tic-Tac-Toe
+For the Tic Tac Toe game, I got help from this video <https://youtu.be/MCLiPW2ns2w?si=rk7wrTc_hWUiXbFd>, because I was still learning the basics of SwiftUi as I didn't know the language and this helped me to practice it. At the beginning, the app was just going to be a minesweeper but I thought it would be cool if later on I could add more minigames so that is why I decided to add the Tic Tac Toe with some modifications to the app.
 
 The Tic Tac Toe game is divided into two files, the first one with the interface and abstract version of how the game works, and the second one which contains the variables and functions to make it work, the `TicTacToeView` provides a visually appealing and interactive interface for playing Tic Tac Toe without having all the code logic invading the space making it more complicated to read and understand, while the `TicTacToeViewModel` provides the core functionality for managing game logic, determining AI moves, and detecting win conditions in the Tic Tac Toe game.
 
