@@ -198,7 +198,7 @@ struct Cell {
     var isFlagShown: Bool = false
     var numberOfBombs: Int = 0
     
-    var flagImage: String {
+    var numberOrFlag: String {
         if uncover && !isFlagShown {
             return String(numberOfBombs)
         }
