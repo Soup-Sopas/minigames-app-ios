@@ -14,7 +14,7 @@ In my [TitleScreenView file](/FinalProject/Screens/TitleScreenView/TitleScreenVi
 The Minesweeper game consists of three files, the first file `MinesweeperView`, displays the grid game, a button to toggle into flag mode, and a navigation link to return to the title screen. The second file is `GridGameView`, this code defines a grid interface where users interact with cells by tapping, revealing their content, or placing flags and when the game is over it overlays a custom alert to indicate if you win or lose where you can play again or return to the title screen. The third file, 'GridGameViewModel`, is a model that manages the game logic and state for the grid. For more information about each file, check the code breakdown.
 
 
-#### [`MinesweeperView`](/FinalProject/Screens/MinewsweeperView/MinewsweeperView.swift) breakdown:
+#### [`MinesweeperView`](/FinalProject/Screens/MinesweeperView/MinesweeperView.swift) breakdown:
 - The `MinesweeperView` struct defines the user interface for the Minesweeper game.
 - It manages the state of the flag mode through the `isFlagModeActive` state variable.
 - The body of the view is structured as a `VStack`, containing the game grid (`GridGameView`) and a control panel.
@@ -29,10 +29,10 @@ The Minesweeper game consists of three files, the first file `MinesweeperView`, 
 - Certain cells may contain bombs, depending on conditions specified in the view model.
 - The `onTapGesture` modifier handles tap events on cells. In flag mode, tapping puts or removes flags on the cells, otherwise, it processes moves by uncovering cells.
 - The view includes an overlay for displaying custom alerts when the game is over.
-- The alert presents a title and a button to reset the game or go back to the [`Title Screen`](#title-screen).
+- The alert presents a title and a button to reset the game or go back to the title screen.
 - User interaction with the grid is disabled when an alert is active.
 
-#### [`GridGameViewModel`](/FinalProject/Screens/MinewsweeperView/GridGameViewModel.swift) 
+#### [`GridGameViewModel`](/FinalProject/Screens/MinesweeperView/GridGameViewModel.swift) 
 - It defines properties such as `columns`, `bombs`, `cells`, `hintsMap`, `showBombs`, `title`, and `isAlertActive` to keep track of game elements and state.
 - The `processMove(for:)` method handles player moves, determines game outcomes, and updates the game state accordingly.
 - Methods like `alternateBox`, `getSquaresAround`, `createHintsMap`, `determineNumberOfBombs`, `toMatrix`, and `uncoverEmptySpaces` support game logic such as bomb placement, hint generation, and uncovering empty spaces.
@@ -57,7 +57,7 @@ The Tic Tac Toe game is divided into two files, the first one with the interface
 - A `returnView` component allows users to navigate back to the title screen.
 - Alerts are displayed using a custom alert component (`CustomAlerts`) when the game is over or certain conditions are met.
 
-#### [`TicTacToeViewModel`](FinalProject/Screens/TicTacToeView/TicTacToeviewModel.swift) breakdown:
+#### [`TicTacToeViewModel`](FinalProject/Screens/TicTacToeView/TicTacToeViewModel.swift) breakdown:
 - The `TicTacToeViewModel` class manages the game logic and state for the Tic Tac Toe game.
 - It includes properties such as `moves`, `isTaken`, `isBoardDisabled`, `alertItem`, and `isAlertActive` to track game elements and state.
 - The `processMove(for:)` method handles player moves and triggers win conditions or draws based on the current game state.
