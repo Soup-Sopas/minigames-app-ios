@@ -21,7 +21,7 @@ The Minesweeper game consists of three files, the first file `MinesweeperView`, 
 - The control panel includes a button to toggle flag mode and a navigation link to return to the title screen.
 - The flag mode toggle button switches between flag mode and regular mode based on the `isFlagModeActive` state.
 
-#### [`GridGameView`](/FinalProject/Screens/MinewsweeperView/GridGameView.swift) breakdown:
+#### [`GridGameView`](/FinalProject/Screens/MinesweeperView/GridGameView.swift) breakdown:
 - The view includes a state object `vM` of type `GridGameViewModel`.
 - It accepts a binding `isFlagModeActive` of type `Bool`.
 - The body of the view is composed of a `ZStack` containing a `LazyVGrid`, representing a grid layout.
