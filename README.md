@@ -36,6 +36,7 @@ The Minesweeper game consists of three files, the first file `MinesweeperView`, 
 - It defines properties such as `columns`, `bombs`, `cells`, `hintsMap`, `showBombs`, `title`, and `isAlertActive` to keep track of game elements and state.
 - The `processMove(for:)` method handles player moves, determines game outcomes, and updates the game state accordingly.
 - Methods like `alternateBox`, `getSquaresAround`, `createHintsMap`, `determineNumberOfBombs`, `toMatrix`, and `uncoverEmptySpaces` support game logic such as bomb placement, hint generation, and uncovering empty spaces.
+- The `uncoverEmptySpaces` method uses the Flood fill algorithm to find all the cells with 0 bombs, around the uncovered cell.
 - The `resetGame()` method resets the game state for a new game.
 - The `Cell` struct represents a single cell in the game grid.
 - It contains properties like `index`, `uncover`, `isFlagShown`, `numberOfBombs`, and `numberOrFlag` to manage cell states and display.
